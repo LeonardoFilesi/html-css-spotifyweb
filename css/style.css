@@ -24,11 +24,43 @@ COMMON
 }
 
 .sidebar {
-    width: 200px;
-    height: calc(100% - 150px);
+    width: 150px;
+    height: calc(100% - 90px);
 }
 
 .playbar {
     width: 100%;
-    height: 150px;
+    height: 90px;
+    right: 0;
+    bottom: 0;
+}
+
+.content {
+    left: 150px;
+}
+
+.popup {
+    height: 100px;
+    width: 100%;
+}
+
+.navbar {
+    height: 80px;
+    width: 100vw;
+    margin-top: 100px;
+}
+
+.recentlyplayed {
+    height: 200px;
+    width: 100%;
+}
+
+.createdforyou {
+    height: 200px;
+    width: 100%;
+}
+
+.popular {
+    height: 200px;
+    width: 100%;
 }
