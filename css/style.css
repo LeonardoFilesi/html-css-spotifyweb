@@ -106,15 +106,14 @@ CONTENT
 .content {
     margin-left: 150px;
     background-color: aqua;
-    padding-top: 100px;
+    padding-top: 80px;
     padding-bottom: 90px;
 }
 
 /* sub-ad */
 
 .sub-ad {
-    height: 100px;
-    width: 100%;
+    width: calc(100% - 150px);
     top: 0;
     left: 150px;
     background-color: rgba(248, 43, 43, 0.63);
