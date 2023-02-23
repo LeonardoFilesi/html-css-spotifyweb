@@ -59,7 +59,7 @@ COMMON
 
 .card {
     width: calc(100% / 6 - 1rem);
-    minwidth: 180px;
+    min-width: 100px;
     padding: 5px;
     margin: .5rem;
 }
