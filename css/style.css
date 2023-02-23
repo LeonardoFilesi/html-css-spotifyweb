@@ -1,5 +1,5 @@
 /* RESET */
-* {
+*, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -18,7 +18,7 @@ COMMON
     color: lightgray;
 }
 
-/* tools */
+/* utilties */
 
 .wrapper {
     width: 100%;
@@ -85,6 +85,7 @@ SIDEBAR
     height: calc(100vh - 90px);
     background-color: rgb(184, 145, 97);
     top: 0;
+    left: 0;
 }
 
 /*******************************************
@@ -108,6 +109,7 @@ CONTENT
     background-color: aqua;
     padding-top: 80px;
     padding-bottom: 90px;
+    overflow-y: auto;
 }
 
 /* sub-ad */
@@ -129,6 +131,10 @@ CONTENT
     background-color: rgb(0, 202, 202);
     padding: 20px;
     justify-content: center;
+}
+
+.navbar h4 {
+    padding: 0 10px;
 }
 /* end navbar */
 
@@ -160,3 +166,25 @@ CONTENT
     padding: 20px;
 }
 
+
+
+/*******************************************
+SOLUZIONE RESPONSIVE
+********************************************/
+
+@media screen  and (max-width: 600px) {
+    .sidebar {
+        width: 50px;
+    }
+
+    .content {
+        margin-left: 50px;
+    }
+
+    .sub-ad {
+        left: 50px;
+        width: calc(100% - 50px);
+    }
+    
+
+}
