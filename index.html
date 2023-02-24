@@ -13,58 +13,70 @@
     <title>Spotify</title>
 </head>
 <body>
+
+<!-- SIDEBAR -->
+
     <div class="sidebar fixed flex col">
-      <div>
 
-        <img class="logo" src="img/logo.svg" alt="">
+        <div>
+            
+            <div class="sidebar-top flex col">
+                <img class="logo" src="img/logo.svg" alt="">
+                <img class="logo-small" src="img/logo-small.svg" alt="">
 
-        <div class="sidebar-opt lightgray flex">
-            <img src="img/home.svg" alt="">
-            <p>Home</p>
+                <div class="sidebar-opt lightgray flex">
+                    <img src="img/home.svg" alt="">
+                    <p>Home</p>
+                </div>
+    
+                <div class="sidebar-opt lightgray flex">
+                    <img src="img/search.svg" alt="">
+                    <p>Cerca</p>
+                </div>
+    
+                <div class="sidebar-opt lightgray flex">
+                    <img src="img/libreria.svg" alt="">
+                    <p>La tua Libreria</p>
+                </div>
+            </div>
+
+            <div class="sidebar-second">
+                <h3 class="white">PLAYLIST</h3>
+
+                <div class="sidebar-opt create-playlist flex">
+                    <i class="fa-solid fa-square-plus lightgray"></i>
+                    <h3 class="lightgray">Crea Playlist</h3>
+                </div>
+    
+                <ul>
+                    <li class="lightgray">Nome Playlist</li>
+                    <li class="lightgray">Nome Playlist</li>
+                    <li class="lightgray">Nome Playlist</li>
+                    <li class="lightgray">Nome Playlist</li>
+                    <li class="lightgray">Nome Playlist</li>
+                    <li class="lightgray">Nome Playlist</li>
+                    <li class="lightgray">Nome Playlist</li>
+                </ul>  
+            </div>
         </div>
 
-        <div class="sidebar-opt lightgray flex">
-            <img src="img/search.svg" alt="">
-            <p>Cerca</p>
+        <div class="sidebar-bottom flex col">
+            <div class="sidebar-bottom-opt lightgray flex">
+                <img src="img/download.svg" alt="">
+                <p>Installa app</p>
+            </div>
+            <div class="between-space flex"></div>
+            <div class="sidebar-opt lightgray flex">
+                <img class="profile circle" src="img/profile.svg" alt="">
+                <h3 class="white">John Doe</h3>
+            </div>
         </div>
-
-        <div class="sidebar-opt lightgray flex">
-            <img src="img/libreria.svg" alt="">
-            <p>La tua Libreria</p>
-        </div>
-
-        <h3 class="white">PLAYLIST</h3>
-
-        <div class="sidebar-opt create-playlist flex">
-            <i class="fa-solid fa-square-plus lightgray"></i>
-            <h3 class="lightgray">Crea Playlist</h3>
-        </div>
-
-        <ul>
-            <li class="lightgray">Nome Playlist</li>
-            <li class="lightgray">Nome Playlist</li>
-            <li class="lightgray">Nome Playlist</li>
-            <li class="lightgray">Nome Playlist</li>
-            <li class="lightgray">Nome Playlist</li>
-            <li class="lightgray">Nome Playlist</li>
-            <li class="lightgray">Nome Playlist</li>
-        </ul>
-      </div>
-
-      <div class="sidebar-bottom flex col">
-        <div class="sidebar-bottom-opt lightgray flex">
-            <img src="img/download.svg" alt="">
-            <p>Installa app</p>
-        </div>
-        <div class="between-space"></div>
-        <div class="sidebar-opt lightgray flex">
-            <img class="profile circle" src="img/profile.svg" alt="">
-            <h3 class="white">John Doe</h3>
-
-        </div>
-      </div>
 
     </div>
+
+<!-- END SIDEBAR -->
+
+<!-- SUB AD -->
 
     <div class="sub-ad fixed flex end">
         <button class="button white">
@@ -72,17 +84,23 @@
         </button>
     </div>
 
+<!-- END SUB AD -->
+
+<!-- CONTENT -->
     <div class="content">
        
+        <!-- navbar -->
         <div class="navbar flex wrap">
-            <a class="nounderline" href=""><h4 class="lightgray">IN EVIDENZA</h4></a>
-            <a class="nounderline" href=""><h4 class="lightgray">PODCAST</h4></a>
-            <a class="nounderline" href=""><h4 class="lightgray">CLASSIFICHE</h4>
-            <a class="nounderline" href=""><h4 class="lightgray">GENERI E MOOD</h4></a>
-            <a class="nounderline" href=""><h4 class="lightgray">NUOVE USCITE</h4></a>
-            <a class="nounderline" href=""><h4 class="lightgray">SCOPRI</h4></a>
+            <a class="nounderline flex col" href=""><h4 class="lightgray">IN EVIDENZA</h4></a>
+            <a class="nounderline flex col" href=""><h4 class="lightgray">PODCAST</h4></a>
+            <a class="nounderline flex col" href=""><h4 class="lightgray">CLASSIFICHE</h4>
+            <a class="nounderline flex col" href=""><h4 class="lightgray">GENERI E MOOD</h4></a>
+            <a class="nounderline flex col" href=""><h4 class="lightgray">NUOVE USCITE</h4></a>
+            <a class="nounderline flex col" href=""><h4 class="lightgray">SCOPRI</h4></a>
         </div>
+        <!-- end navbar -->
 
+        <!-- recetrly played -->
         <div class="recentlyplayed">
             <h2 class="title white">Recently played</h2>
             <div class="recentlyplayed row flex wrap">
@@ -118,6 +136,9 @@
                 </div>
             </div>
         </div>
+        <!-- end recently played -->
+
+        <!-- created for you -->
 
         <div class="createdforyou">
             <h2 class="title white">Creato per Leonardo</h2>
@@ -133,7 +154,9 @@
                 </div>
             </div>
         </div>
+        <!-- end created for you -->
 
+        <!-- popular -->
         <div class="popular">
             <h2 class="title white">Artisti più popolari</h2>
             <p class="title lightgray">Più ascoli, più accurati saranno i suggerimenti</p>
@@ -145,11 +168,17 @@
                 <div class="card flex col">
                     <img class="circle" src="img/mixdaily.jpeg" alt="">
                     <h3 class="white">Einaudi</h3>
-            </div>
+                </div>
         </div>
+        <!-- end popular -->
+
     </div>
 
+<!-- PLAYBAR -->
+
     <div class="playbar fixed flex">
+
+        <!-- playbar info -->
         <div class="playbar-info flex">
             <div class="cover flex">
                 <div class="cover-img"><img src="img/sinister.jpeg" alt=""></div>
@@ -164,8 +193,7 @@
             </div>
         </div>
 
-       
-
+       <!-- playbar controls -->
         <div class="playbar-controls flex col">
             <ul class="controls flex">
                 <li class="white"><i class="fa-solid fa-shuffle"></i></li>
@@ -183,8 +211,9 @@
                 </div>
                 <div class="white">4:35</div>
             </div>
-
         </div>
+
+        <!-- playbar options -->
         <div class="playbar-options flex">
             <i class="fa-solid fa-bars white"></i>
             <i class="fa-solid fa-display white"></i>
@@ -195,5 +224,8 @@
             </div>
         </div>
     </div>
+    
+<!-- END PLAYBAR -->
+
 </body>
 </html>

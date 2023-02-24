@@ -55,7 +55,7 @@ COMMON
     justify-content: flex-end;
 }
 
-.logo {}
+
 
 .card {
     width: calc(100% / 6 - 1rem);
@@ -73,6 +73,7 @@ COMMON
 
 .nounderline {
     text-decoration: none;
+    text-align: center;
 }
 
 .title {
@@ -88,6 +89,8 @@ COMMON
     border-bottom: 2px solid rgb(129, 129, 129);
     margin-bottom: 10px;
     margin-top: 10px;
+    width: 80%;
+    align-self: center;
 }
 
 /* end-utilities */
@@ -105,12 +108,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*******************************************
+END COMMON
+********************************************/
+
+
+
+/*******************************************
 SIDEBAR
 ********************************************/
 
+/* general */
+
 .sidebar {
     width: 200px;
-    height: calc(100vh - 108px);
+    height: calc(100vh - 98px);
     background-color: #000000;
     top: 0;
     left: 0;
@@ -119,9 +130,31 @@ SIDEBAR
     justify-content: space-between;
 }
 
+.sidebar-top {
+    gap: 10px;
+}
+
+.sidebar-second {
+    display: block;
+}
+
+.sidebar-bottom {
+    padding-bottom: 20px;
+}
+
+/* end generals */
+
+/* items */
+
 .logo {
     padding-left: 10px;
 }
+
+.logo-small {
+    display: none;
+    padding-left: 10px;
+}
+
 
 .sidebar img {
     width: 80%;
@@ -130,6 +163,19 @@ SIDEBAR
 .sidebar h3 {
     margin-left: 10px;
 }
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar li {
+    padding: 5px 0;
+}
+
+/* end items */
+
+/* options */
 
 .sidebar-opt {
     align-items: center;
@@ -145,18 +191,9 @@ SIDEBAR
     font-size: 2rem;
 }
 
-.sidebar ul {
-    list-style-type: none;
-    padding: 10px;
-}
+/* end options */
 
-.sidebar li {
-    padding: 5px 0;
-}
-
-.sidebar-bottom {
-    padding-bottom: 20px;
-}
+/* bottom */
 
 .sidebar-bottom-opt {
     padding: 0 10px;
@@ -170,6 +207,15 @@ SIDEBAR
     background-color: rgb(129, 129, 129);
     font-size: .5rem;
 }
+
+/* end bottom */
+
+/*******************************************
+END SIDEBAR
+********************************************/
+
+
+
 /*******************************************
 CONTENT
 ********************************************/
@@ -180,6 +226,7 @@ CONTENT
     padding: 80px .5rem 120px;
     overflow-y: auto;
     background-color: #141922;
+    height: 100vh;
 }
 
 /* sub-ad */
@@ -188,7 +235,7 @@ CONTENT
     width: calc(100% - 200px);
     top: 0;
     left: 200px;
-    background-color: rgba(248, 43, 43, 0.63);
+    background-color: rgba(0, 1, 39, 0.507);
     padding: 20px;
 }
 
@@ -198,13 +245,13 @@ CONTENT
 
 .navbar {
     width: 100%;
-    backgroundcolor: rgb(0, 202, 202);
     padding: 20px;
     justify-content: center;
+    gap: 10px;
 }
 
 .navbar h4 {
-    padding: 0 10px;
+    padding: 0;
 }
 /* end navbar */
 
@@ -212,7 +259,6 @@ CONTENT
 
 .recentlyplayed {
     width: 100%;
-    backgroundcolor: rgb(0, 161, 161);
 } 
 
 /* end recently played */
@@ -221,7 +267,6 @@ CONTENT
 
 .createdforyou {
     width: 100%;
-    backgroundcolor: rgb(1, 130, 216);
 }
 
 /* end created fot you */
@@ -231,6 +276,12 @@ CONTENT
 .popular {
     width: 100%;
 }
+
+/*******************************************
+END CONTENT
+********************************************/
+
+
 
 /*******************************************
 PLAYBAR
@@ -246,7 +297,7 @@ PLAYBAR
 }
 
 .bigger {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 /* left section */
@@ -338,6 +389,12 @@ PLAYBAR
 /* end right section */
 
 /*******************************************
+END PLAYBAR
+********************************************/
+
+
+
+/*******************************************
 SOLUZIONE RESPONSIVE
 ********************************************/
 
@@ -349,9 +406,34 @@ SOLUZIONE RESPONSIVE
 
 }
 
+@media screen  and (max-width: 700px) {
+  
+    .content .card {
+        width: calc(100% / 2 - 1rem);
+    }
+
+    .controls {
+        gap: 5px;
+    }
+
+}
+
+
 @media screen  and (max-width: 600px) {
     .sidebar {
         width: 50px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logo-small {
+        display: inline-block;
+    }
+
+    .sidebar img {
+        width: 80%;
     }
 
     .content {
@@ -366,17 +448,29 @@ SOLUZIONE RESPONSIVE
         left: 50px;
         width: calc(100% - 50px);
     }
+
+    .cover-icons {
+        flex-direction: column;
+    }
     
     .controls {
         gap: 5px;
     }
 
-}
+    .sidebar-top p {
+        display:none;
+    }
 
-@media screen  and (max-width: 700px) {
-  
-    .content .card {
-        width: calc(100% / 2 - 1rem);
+    .sidebar-second {
+        display: none;
+    }
+
+    .sidebar-bottom p, .sidebar-bottom h3 {
+        display: none;
+    }
+
+    .sidebar-bottom img {
+        width: 80%;
     }
 
 }
@@ -385,8 +479,8 @@ SOLUZIONE RESPONSIVE
 :HOVER OPTIONS
 ********************************************/
 
-.navbar h4:hover {
-    border-bottom: 2px solid green;
+.navbar a:hover::after {
+    display: inline-block;
 }
 
 .sidebar-opt:hover {
@@ -394,18 +488,18 @@ SOLUZIONE RESPONSIVE
 }
 
 .controls i:hover {
-    font-size: 2.7rem;
+    font-size: 1.8rem;
 }
 
-
-
 .navbar a::after {
-    display: inline-block;
+    display: none;
     height: 4px;
     background-color: #aaf82d;
     width: 40px;
     content: " ";
-    text-align: center;
+    align-self: center;
 }
+
+
 
 
