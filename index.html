@@ -14,6 +14,39 @@
 </head>
 <body>
     <div class="sidebar fixed">
+      <img src="img/logo.svg" alt="">
+
+      <div class="sidebar-opt lightgray flex">
+        <img src="img/home.svg" alt="">
+        <p>Home</p>
+      </div>
+
+      <div class="sidebar-opt lightgray flex">
+        <img src="img/search.svg" alt="">
+        <p>Cerca</p>
+      </div>
+
+      <div class="sidebar-opt lightgray flex">
+        <img src="img/libreria.svg" alt="">
+        <p>La tua Libreria</p>
+      </div>
+
+      <h3 class="white">PLAYLIST</h3>
+
+      <div class="sidebar-opt create-playlist flex">
+        <i class="fa-solid fa-square-plus lightgray"></i>
+        <h3 class="lightgray">Crea Playlist</h3>
+      </div>
+
+      <ul>
+        <li class="lightgray">Nome Playlist</li>
+        <li class="lightgray">Nome Playlist</li>
+        <li class="lightgray">Nome Playlist</li>
+        <li class="lightgray">Nome Playlist</li>
+        <li class="lightgray">Nome Playlist</li>
+        <li class="lightgray">Nome Playlist</li>
+        <li class="lightgray">Nome Playlist</li>
+      </ul>
 
     </div>
 
@@ -26,16 +59,16 @@
     <div class="content">
        
         <div class="navbar flex wrap">
-            <h4 class="lightgray">IN EVIDENZA</h4>
-            <h4 class="lightgray">PODCAST</h4>
-            <h4 class="lightgray">CLASSIFICHE</h4>
-            <h4 class="lightgray">GENERI E MOOD</h4>
-            <h4 class="lightgray">NUOVE USCITE</h4>
-            <h4 class="lightgray">SCOPRI</h4>
+            <a class="nounderline" href=""><h4 class="lightgray">IN EVIDENZA</h4></a>
+            <a class="nounderline" href=""><h4 class="lightgray">PODCAST</h4></a>
+            <a class="nounderline" href=""><h4 class="lightgray">CLASSIFICHE</h4>
+            <a class="nounderline" href=""><h4 class="lightgray">GENERI E MOOD</h4></a>
+            <a class="nounderline" href=""><h4 class="lightgray">NUOVE USCITE</h4></a>
+            <a class="nounderline" href=""><h4 class="lightgray">SCOPRI</h4></a>
         </div>
 
         <div class="recentlyplayed">
-            <h2 class="white">Recently played</h2>
+            <h2 class="title white">Recently played</h2>
             <div class="recentlyplayed row flex wrap">
                 <div class="card flex col">
                     <img src="img/metal_lifting.jpg" alt="">
@@ -71,8 +104,8 @@
         </div>
 
         <div class="createdforyou">
-            <h2 class="white">Creato per Leonardo</h2>
-            <p class="lightgray">Più ascoli, più accurati saranno i suggerimenti</p>
+            <h2 class="title white">Creato per Leonardo</h2>
+            <p class="title lightgray">Più ascoli, più accurati saranno i suggerimenti</p>
             <div class="createdforyou row flex wrap">
                 <div class="card flex col">
                     <img src="img/radar.jpeg" alt="">
@@ -86,22 +119,65 @@
         </div>
 
         <div class="popular">
-            <h2 class="white">Artisti più popolari</h2>
-            <p class="lightgray">Più ascoli, più accurati saranno i suggerimenti</p>
+            <h2 class="title white">Artisti più popolari</h2>
+            <p class="title lightgray">Più ascoli, più accurati saranno i suggerimenti</p>
             <div class="popular row flex wrap">
                 <div class="card flex col">
-                    <img src="img/radar.jpeg" alt="">
+                    <img class="circle" src="img/radar.jpeg" alt="">
                     <h3 class="white">Lana del Ray</h3>
                 </div>
                 <div class="card flex col">
-                    <img src="img/mixdaily.jpeg" alt="">
+                    <img class="circle" src="img/mixdaily.jpeg" alt="">
                     <h3 class="white">Einaudi</h3>
             </div>
         </div>
     </div>
 
-    <div class="playbar fixed">
+    <div class="playbar fixed flex">
+        <div class="playbar-info flex">
+            <div class="cover flex">
+                <div class="cover-img"><img src="img/sinister.jpeg" alt=""></div>
+                <div class="cover-name flex col">
+                    <h4 class="white">Sinister</h4>
+                    <P class="lightgray">Brano Nome</P>
+                </div>
+            </div>
+            <div class="cover-icons flex">
+                <i class="fa-regular fa-heart lightgray"></i>
+                <i class="fa-regular fa-folder lightgray"></i>
+            </div>
+        </div>
 
+       
+
+        <div class="playbar-controls flex col">
+            <ul class="controls flex">
+                <li class="white"><i class="fa-solid fa-shuffle"></i></li>
+                <li class="white"><i class="fa-solid fa-backward-step"></i></li>
+                <li class="white"><i class="fa-regular fa-circle-play"></i></li>
+                <li class="white"><i class="fa-solid fa-forward-step"></i></li>
+                <li class="white"><i class="fa-solid fa-rotate-right"></i></li>
+            </ul>
+
+            <div class="time-control flex">
+                <div class="white">0:25</div>
+                <div class="time-bars flex">
+                    <div class="timebar1"></div>
+                    <div class="timebar2"></div>
+                </div>
+                <div class="white">4:35</div>
+            </div>
+
+        </div>
+        <div class="playbar-options flex">
+            <i class="fa-solid fa-bars white"></i>
+            <i class="fa-solid fa-display white"></i>
+            <i class="fa-solid fa-volume-high white"></i>
+            <div class="time-bars flex">
+                <div class="timebar1"></div>
+                <div class="timebar2"></div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

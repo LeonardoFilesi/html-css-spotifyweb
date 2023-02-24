@@ -15,15 +15,12 @@ COMMON
 }
 
 .lightgray {
-    color: lightgray;
+    color: rgb(129, 129, 129);
 }
 
 /* utilties */
 
-.wrapper {
-    width: 100%;
-    height: 100vh;
-}
+.content
 
 .absolute {
     position: absolute;
@@ -62,6 +59,7 @@ COMMON
     min-width: 100px;
     padding: 5px;
     margin: .5rem;
+
 }
 
 .button {
@@ -71,10 +69,31 @@ COMMON
     background-color: rgba(255, 255, 255, 0);
 }
 
-/* end-tools */
+.nounderline {
+    text-decoration: none;
+}
+
+.title {
+    padding-left: .5rem;
+}
+
+.circle {
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* end-utilities */
 
 img {
     width: 100%;
+}
+
+p {
+    padding: 5px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 5px 0;
 }
 
 /*******************************************
@@ -82,23 +101,28 @@ SIDEBAR
 ********************************************/
 
 .sidebar {
-    width: 150px;
+    width: 200px;
     height: calc(100vh - 90px);
     background-color: rgb(184, 145, 97);
     top: 0;
     left: 0;
+    padding: 20px 10px;
 }
 
-/*******************************************
-PLAYBAR
-********************************************/
+.sidebar img {
+    width: 80%;
+}
 
-.playbar {
-    width: 100%;
-    height: 90px;
-    right: 0;
-    bottom: 0;
-    background-color: rgb(18, 18, 58);
+.sidebar-opt {
+    align-items: center;
+}
+
+.sidebar-opt img {
+    width: 15%;
+}
+
+.sidebar-opt i {
+    
 }
 
 /*******************************************
@@ -106,19 +130,19 @@ CONTENT
 ********************************************/
 
 .content {
-    margin-left: 150px;
+    margin-left: 200px;
     background-color: aqua;
-    padding-top: 80px;
-    padding-bottom: 90px;
+    padding: 80px .5rem 120px;
     overflow-y: auto;
+    background-color: #141922;
 }
 
 /* sub-ad */
 
 .sub-ad {
-    width: calc(100% - 150px);
+    width: calc(100% - 200px);
     top: 0;
-    left: 150px;
+    left: 200px;
     background-color: rgba(248, 43, 43, 0.63);
     padding: 20px;
 }
@@ -144,8 +168,7 @@ CONTENT
 .recentlyplayed {
     width: 100%;
     background-color: rgb(0, 161, 161);
-    padding: 20px;
-}
+} 
 
 /* end recently played */
 
@@ -154,7 +177,6 @@ CONTENT
 .createdforyou {
     width: 100%;
     background-color: rgb(1, 130, 216);
-    padding: 20px;
 }
 
 /* end created fot you */
@@ -163,10 +185,107 @@ CONTENT
 
 .popular {
     width: 100%;
+}
+
+/*******************************************
+PLAYBAR
+********************************************/
+
+.playbar {
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(18, 18, 58);
+    justify-content: space-between;
     padding: 20px;
 }
 
+/* left section */
 
+.playbar-info {
+    width: 230px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cover {
+    width: 80%;
+}
+
+.cover-img {
+    width: 30%;
+}
+
+.cover-name {
+    justify-content: center;
+    padding: 0 0 0 5px;
+}
+
+.cover-icons {
+    gap: 10px;
+}
+
+/* end left section */
+
+/* center section */
+
+.playbar-controls {
+    align-items: center;
+    justify-content: space-between;
+    min-width: calc(100% / 3);
+    padding: 0 20px;
+}
+
+.controls {
+    list-style-type: none;
+    height: 40%;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.time-control {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.time-bars {
+    width: 70%;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.timebar1 {
+    height: 4px;
+    background-color: white;
+    border-radius: 3px;
+    width: 30%;
+}
+
+.timebar2 {
+    height: 4px;
+    background-color: rgb(129, 129, 129);
+    border-radius: 3px;
+    width: 70%;
+}
+
+/* end center section */
+
+/* right section */
+
+.playbar-options {
+    width: 230px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.playbar-options .time-bars {
+    width: 60%;
+}
+
+/* end right section */
 
 /*******************************************
 SOLUZIONE RESPONSIVE
@@ -207,4 +326,12 @@ SOLUZIONE RESPONSIVE
         width: calc(100% / 2 - 1rem);
     }
 
+}
+
+/*******************************************
+:HOVER OPTIONS
+********************************************/
+
+.navbar h4:hover {
+    border-bottom: 2px solid green;
 }
