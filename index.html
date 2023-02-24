@@ -13,40 +13,56 @@
     <title>Spotify</title>
 </head>
 <body>
-    <div class="sidebar fixed">
-      <img src="img/logo.svg" alt="">
+    <div class="sidebar fixed flex col">
+      <div>
 
-      <div class="sidebar-opt lightgray flex">
-        <img src="img/home.svg" alt="">
-        <p>Home</p>
+        <img class="logo" src="img/logo.svg" alt="">
+
+        <div class="sidebar-opt lightgray flex">
+            <img src="img/home.svg" alt="">
+            <p>Home</p>
+        </div>
+
+        <div class="sidebar-opt lightgray flex">
+            <img src="img/search.svg" alt="">
+            <p>Cerca</p>
+        </div>
+
+        <div class="sidebar-opt lightgray flex">
+            <img src="img/libreria.svg" alt="">
+            <p>La tua Libreria</p>
+        </div>
+
+        <h3 class="white">PLAYLIST</h3>
+
+        <div class="sidebar-opt create-playlist flex">
+            <i class="fa-solid fa-square-plus lightgray"></i>
+            <h3 class="lightgray">Crea Playlist</h3>
+        </div>
+
+        <ul>
+            <li class="lightgray">Nome Playlist</li>
+            <li class="lightgray">Nome Playlist</li>
+            <li class="lightgray">Nome Playlist</li>
+            <li class="lightgray">Nome Playlist</li>
+            <li class="lightgray">Nome Playlist</li>
+            <li class="lightgray">Nome Playlist</li>
+            <li class="lightgray">Nome Playlist</li>
+        </ul>
       </div>
 
-      <div class="sidebar-opt lightgray flex">
-        <img src="img/search.svg" alt="">
-        <p>Cerca</p>
+      <div class="sidebar-bottom flex col">
+        <div class="sidebar-bottom-opt lightgray flex">
+            <img src="img/download.svg" alt="">
+            <p>Installa app</p>
+        </div>
+        <div class="between-space"></div>
+        <div class="sidebar-opt lightgray flex">
+            <img class="profile circle" src="img/profile.svg" alt="">
+            <h3 class="white">John Doe</h3>
+
+        </div>
       </div>
-
-      <div class="sidebar-opt lightgray flex">
-        <img src="img/libreria.svg" alt="">
-        <p>La tua Libreria</p>
-      </div>
-
-      <h3 class="white">PLAYLIST</h3>
-
-      <div class="sidebar-opt create-playlist flex">
-        <i class="fa-solid fa-square-plus lightgray"></i>
-        <h3 class="lightgray">Crea Playlist</h3>
-      </div>
-
-      <ul>
-        <li class="lightgray">Nome Playlist</li>
-        <li class="lightgray">Nome Playlist</li>
-        <li class="lightgray">Nome Playlist</li>
-        <li class="lightgray">Nome Playlist</li>
-        <li class="lightgray">Nome Playlist</li>
-        <li class="lightgray">Nome Playlist</li>
-        <li class="lightgray">Nome Playlist</li>
-      </ul>
 
     </div>
 
@@ -154,7 +170,7 @@
             <ul class="controls flex">
                 <li class="white"><i class="fa-solid fa-shuffle"></i></li>
                 <li class="white"><i class="fa-solid fa-backward-step"></i></li>
-                <li class="white"><i class="fa-regular fa-circle-play"></i></li>
+                <li class="white bigger"><i class="fa-regular fa-circle-play"></i></li>
                 <li class="white"><i class="fa-solid fa-forward-step"></i></li>
                 <li class="white"><i class="fa-solid fa-rotate-right"></i></li>
             </ul>
