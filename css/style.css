@@ -262,6 +262,27 @@ CONTENT
     width: 100%;
 } 
 
+.album-image {
+    position: relative;
+}
+
+.album-image img {
+    display: block;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000ab;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
 /* end recently played */
 
 /* created for you */
@@ -501,6 +522,8 @@ SOLUZIONE RESPONSIVE
     align-self: center;
 }
 
-
+.album-image:hover .image-overlay {
+    display: flex;
+}
 
 
